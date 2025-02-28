@@ -16,7 +16,7 @@ public class SuppBD {
     public Connection conectar() {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            return DriverManager.getConnection("jdbc:mysql://localhost:3306/Preguntas_RespuestasBD", "root", "root");
+            return DriverManager.getConnection("jdbc:mysql://localhost:3306/preguntas_respuestasbd", "root", "root");
         } catch (ClassNotFoundException ex) {
             Logger.getLogger(SuppBD.class.getName()).log(Level.SEVERE, null, ex);
         } catch (SQLException ex) {
